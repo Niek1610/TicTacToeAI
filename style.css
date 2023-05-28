@@ -1,30 +1,30 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0%;
     padding: 0%;
-}
-
-h2{
+  }
+  
+  h2 {
     font-size: 34px;
-    
-}
-
-h3{
+  }
+  
+  h3 {
     font-size: 34px;
     text-align: center;
-   color: #00000049;
-}
-
-.text{
+    color: #00000049;
+  }
+  
+  .text {
     color: #003260;
-}
-.onderkant{
+  }
+  
+  .onderkant {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-}
-
-#modeSelect{
+  }
+  
+  #modeSelect {
     opacity: 0.7;
     width: 220px;
     font-size: large;
@@ -35,24 +35,24 @@ h3{
     background-color: #ffffff;
     border-style: none;
     border: 1px solid black;
-}
-
-.popup{
+  }
+  
+  .popup {
     top: 0;
     position: fixed;
     display: none;
     width: 100vw;
     height: 100vh;
     background-color: #00000094;
-}
-
-#restart{
+  }
+  
+  #restart {
     background-color: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.069);
     color: rgb(0, 57, 90);
-}
-
-.card{
+  }
+  
+  .card {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -66,15 +66,14 @@ h3{
     position: absolute;
     background-color: white;
     border-radius: 10px;
-}
-
-body{
+  }
+  
+  body {
     background-color: rgba(0, 110, 255, 0.164);
     width: 100%;
-   
-}
-
-.sliderText{
+  }
+  
+  .sliderText {
     font-size: 28px;
     font-weight: bold;
     margin-top: 50px;
@@ -83,51 +82,44 @@ body{
     margin-left: auto;
     margin-right: auto;
     color: #004789;
-}
-
-.slider {
+  }
+  
+  .slider {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    -webkit-appearance: none; 
-    width: 300px; 
-    height: 8px; 
-    background: #ffffff; 
-    outline: none; 
-    opacity: 0.7; 
-    transition: all 0.3s; 
+    -webkit-appearance: none;
+    appearance: none;
+    width: 300px;
+    height: 8px;
+    background: #ffffff;
+    outline: none;
+    opacity: 0.7;
+    transition: all 0.3s;
     border-radius: 10px;
     cursor: pointer;
   }
   
   .slider::-webkit-slider-thumb {
- 
-    -webkit-appearance: none; 
+    -webkit-appearance: none;
     appearance: none;
-    width: 16px; 
-    height: 16px; 
-    background: #0084ff; 
-    cursor: pointer; 
-    border-radius: 50%; 
+    width: 16px;
+    height: 16px;
+    background: #0084ff;
+    cursor: pointer;
+    border-radius: 50%;
   }
   
-
- 
   .slider:hover {
-    opacity: 1; 
+    opacity: 1;
     scale: 1.02;
   }
   
-
-
-
-.content{
+  .content {
     display: grid;
-}
-
-
-
-td{
+  }
+  
+  td {
     border: 2px solid black;
     height: 120px;
     width: 120px;
@@ -138,23 +130,21 @@ td{
     cursor: pointer;
     background-color: white;
     transition: 0.4s;
-}
-
-td:hover{
+  }
+  
+  td:hover {
     background-color: rgba(255, 255, 255, 0.571);
-
-}
-
-table{
+  }
+  
+  table {
     margin-left: auto;
     margin-right: auto;
     width: 500px;
     height: 500px;
     border-collapse: collapse;
-}
-
-.endgame{
-   
+  }
+  
+  .endgame {
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
@@ -167,12 +157,9 @@ table{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-bottom: 1%;
-   
-}
-
-
-button{
-    
+  }
+  
+  button {
     margin-top: 50px;
     width: 200px;
     height: 75px;
@@ -185,31 +172,56 @@ button{
     cursor: pointer;
     transition: 0.3s;
     text-align: center;
-}
-
-button:hover{
+  }
+  
+  button:hover {
     transform: scale(1.02);
     background-color: rgb(0, 57, 90);
-}
-
-
-.wp{
+  }
+  
+  .wp {
     color: rgb(0, 0, 0);
     font-size: 40px;
     margin-top: 10%;
     text-align: center;
-}
-
-.okbtn{
+  }
+  
+  .okbtn {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
-}
-
-.wins{
+  }
+  
+  .wins {
     margin-top: 10%;
-}
-
-.percentage{
+  }
+  
+  .percentage {
     text-align: center;
-}
+  }
+  
+  /* Responsive adjustments for phones */
+  @media only screen and (max-width: 480px) {
+    .card {
+      height: auto;
+      width: 85%;
+      margin: 5% auto;
+      padding: 5%;
+    }
+  
+    table {
+      width: 90%;
+      height: auto;
+      margin: 5% auto;
+    }
+  
+    .endgame {
+      font-size: 30px;
+    }
+  
+    .sliderText {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+  }
+  
