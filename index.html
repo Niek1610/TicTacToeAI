@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TicTacToe</title>
+</head>
+<body>
+    <div class="wrapper2">
+
+      
+
+        <div class="endgame">
+            <div class="text"> <br> </div>
+        </div>
+
+        <div class="content">
+            <table>
+                <tr>
+                    <td class="cell" id="0"></td>
+                    <td class="cell" id="1"></td>
+                    <td class="cell" id="2"></td>
+                </tr>
+                <tr>
+                    <td class="cell" id="3"></td>
+                    <td class="cell" id="4"></td>
+                    <td class="cell" id="5"></td>
+                </tr>
+                <tr>
+                    <td class="cell" id="6"></td>
+                    <td class="cell" id="7"></td>
+                    <td class="cell" id="8"></td>
+                </tr>
+                
+            </table>
+            <div class="sliderText" id="mode">Normaal</div>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" placeholder="test">
+            
+        </div>
+
+        <div style="width: 100%; display: flex; justify-content: center; gap: 20px;">
+            <button id="restart" onclick="startGame()">Opnieuw</button>
+            <button id="statsBtn">Statistieken</button>
+        </div>
+       
+       
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="card">
+            <h3>Kies mode</h3>
+            <select title="select" name="Modes" id="modeSelect">
+                <option value="Selecteer"> -- Selecteer -- </option>
+                <option value="Retarded">Retarded</option>
+                <option value="Heel makkelijk">Heel makkelijk</option>
+                <option value="Normaal">Normaal</option>
+                <option value="Makkelijk">Makkelijk</option>
+                <option value="Moeilijk">Moeilijk</option>
+                <option value="Onmogelijk">Onmogelijk</option>
+            </select>
+            <h2 class="wins">Wins:</h2>
+            <h2 class="losses">Losses:</h2>
+            <h2 class="draws">Draws:</h2>
+            <h2 class="wp">Win percentage</h2>
+            <h2 class="percentage"></h2>
+            <button id="okBtn" class="okbtn">OK</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
